@@ -2,7 +2,7 @@
 
  This project was designed to help people read braille using machine learning and AI
 
-![add image descrition here](direct image link here)
+![In this repository, images that were run through the model were added](direct image link here)
 
 ## The Algorithm
 
@@ -11,8 +11,6 @@ This project uses a retrained resnet-18 model which has been trained by the data
 ## Running this project
 
 1.	Set up the jetson-inference project linked [here](https://github.com/dusty-nv/jetson-inference)
-2.	
-
-[View a video explanation here](video link)
-
-![image](https://github.com/KeoLangisAsian/brailleproject/assets/127744103/e798e500-2327-49b9-aecb-1520296aaf42)
+2.	change directories into this repository
+3.     run the following command:
+imagenet.py --model=models/resnet18.onnx --input_blob=input_0 --output_blob=output_0 --labels=braille_dataset/labels.txt input_file_name output_file_name
